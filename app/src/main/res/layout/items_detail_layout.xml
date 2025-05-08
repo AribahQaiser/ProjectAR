@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_icon_imgv"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_sofa_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_name_txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Compat sofa"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_icon_imgv" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_description_txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Compat sofa with extra comfort for home forniture"
+        android:textColor="#605151"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_name_txtv" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_price_txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Rs. 16500.00"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_description_txtv" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/item_rating_br"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:numStars="5"
+        android:progressTint="@android:color/holo_orange_light"
+        android:rating="4."
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:stepSize="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_price_txtv" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/view_in_ar_txtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_rating_br"
+        android:text="@string/underlined_text"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
